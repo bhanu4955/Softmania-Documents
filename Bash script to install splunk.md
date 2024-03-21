@@ -1,4 +1,4 @@
-'''
+```
 #!/bin/bash
 
 SPLUNK_FILENAME="splunk-9.2.0.1-d8ae995bf219-Linux-x86_64.tgz"
@@ -19,4 +19,5 @@ sudo $INSTALL_DIR/bin/splunk start --accept-license --answer-yes
 
 # Enable Splunk to start on boot
 sudo ${SPLUNK_DIR}/bin/splunk enable boot-start -user splunk
-'''
+
+```
