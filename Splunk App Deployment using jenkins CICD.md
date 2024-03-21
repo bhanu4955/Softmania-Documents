@@ -118,11 +118,14 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 **Step 4: Creating a Freestyle project to get the source code from GitHub to deploy into the Splunk**
 
 Create a New Jenkins Freestyle Project:
+
 Click on "New Item" on the Jenkins dashboard.
 Enter a name for your project (e.g., "Deploy to Splunk").
 Select "Freestyle project" and click "OK" to create the project.
+
 Configure Source Code Management (SCM):
 In the project configuration, under "Source Code Management," select "Git".
+
 Enter the repository URL of your GitHub repository.
 Select the credentials you created earlier.
 Configure any additional settings as needed for your repository.
@@ -133,7 +136,9 @@ Enter the shell commands or batch commands to deploy the source code into Splunk
 
 Save and Run the Jenkins Job:
 Save your Jenkins project configuration.
+
 Click on "Build Now" to run the Jenkins job and deploy the source code into Splunk.
+
 Monitor the Build:
 You can monitor the build progress and view the console output to see the deployment steps.
 
