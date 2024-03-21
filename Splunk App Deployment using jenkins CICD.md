@@ -58,32 +58,43 @@ Visit your GitHub repository to verify that the app folder has been successfully
 **Step 2: Spinning up EC2 instance and installing all the packages (Java)**
 
 Sign in to AWS Console:
+
 Go to the AWS Management Console (https://aws.amazon.com/console/) and sign in.
 Navigate to EC2:
+
 In the AWS Management Console, navigate to the EC2 service by clicking on "Services" in the top menu and selecting "EC2" under the "Compute" section.
+
 Launch an Instance:
+
 Click on the "Launch Instance" button to start the EC2 instance creation process.
+
 Choose an Amazon Machine Image (AMI):
 Select an AMI for your instance. You can choose from a variety of Linux and Windows AMIs. For example, you can choose an Amazon Linux 2 AMI.
+
 Choose an Instance Type:
 Select an instance type based on your requirements. The instance type determines the hardware capabilities of your EC2 instance.
+
 Configure Instance Details:
 Configure instance details such as the number of instances, network settings, and IAM role. You can use the default settings for most options.
+
 Add Storage:
 Configure the storage settings for your instance. You can add additional EBS volumes if needed.
+
 Configure Security Group:
 Configure the security group to control inbound and outbound traffic to your instance. You'll need to open ports for SSH (22) and any other services you plan to run.(Note :customTCP: port(8000); All traffic(22))
+
 Review and Launch:
 Review your instance configuration and click on "Launch" to launch your EC2 instance.
+
 Install Packages:
-Once connected to your instance, you can install packages using the package manager for your distribution. For example, on Amazon Linux 2, you can use yum/apt depend on OS
+Once connected to your instance, you can install packages using the package manager for your distribution. For example, on Amazon Linux 
+2. you can use yum/apt depend on OS
 ```		
-sudo yum/apt update -y
-sudo yum/apt install package-name
+sudo apt update -y
+sudo apt install package-name
 sudo apt update
 sudo apt install openjdk-17-jre
 ```
-
 
 **Step 3: Installing the Jenkins and installing the required plugins for deployments**
 
@@ -102,7 +113,6 @@ For first login to Jenkins :
 ```
 cat /var/lib/jenkins/secrets/initialAdminPassword 
 ```
-
 
 
 **Step 4: Creating a Freestyle project to get the source code from GitHub to deploy into the Splunk**
