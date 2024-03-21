@@ -11,6 +11,7 @@ GitBash: Install GitBash on your local system. You can download it from https://
 GitHub Account: Create a GitHub account (https://github.com/) if you do not have one.
 
 **Deployment Steps**
+
 1. Download and Unzip Splunk App.
 Click on login to download..
 Navigate to the Splunk app download page: Download.
@@ -55,6 +56,7 @@ Visit your GitHub repository to verify that the app folder has been successfully
 
 
 **Step 2: Spinning up EC2 instance and installing all the packages (Java)**
+
 Sign in to AWS Console:
 Go to the AWS Management Console (https://aws.amazon.com/console/) and sign in.
 Navigate to EC2:
@@ -84,6 +86,7 @@ sudo apt install openjdk-17-jre
 
 
 **Step 3: Installing the Jenkins and installing the required plugins for deployments**
+
 ```
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
@@ -103,6 +106,7 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 **Step 4: Creating a Freestyle project to get the source code from GitHub to deploy into the Splunk**
+
 Create a New Jenkins Freestyle Project:
 Click on "New Item" on the Jenkins dashboard.
 Enter a name for your project (e.g., "Deploy to Splunk").
