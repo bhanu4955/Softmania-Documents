@@ -4,6 +4,7 @@
 This documentation provides step-by-step instructions for deploying the Splunk app from Splunkbase to a local system and subsequently pushing it to a GitHub repository using GitBash.
 
 **Prerequisites**
+
 Before starting the deployment process, ensure that the following prerequisites are met:
 Splunk Account: Create an account on Splunkbase (https://splunkbase.splunk.com/app/1928) if you do not have one.
 GitBash: Install GitBash on your local system. You can download it from https://gitforwindows.org/.
@@ -41,6 +42,9 @@ Use the following commands to add the GitHub repository as the remote origin:
 ```
 git remote add origin "YourGitHubRepositoryURL"
 ```
+7. Verify on GitHub
+Visit your GitHub repository to verify that the app folder has been successfully pushed.
+
 8. Push to GitHub
 Push the committed changes to the master branch of the GitHub repository:
 ```
