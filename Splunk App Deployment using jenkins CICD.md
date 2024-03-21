@@ -31,7 +31,7 @@ git init
 ```
 git add appname
 ```
-Commit the changes with a meaningful message:
+5. Commit the changes with a meaningful message:
 ```
 git commit -m "Initial commit"
 ```
@@ -49,29 +49,6 @@ git push -u origin master
 10. Verify on GitHub
 Visit your GitHub repository to verify that the app folder has been successfully pushed.
 
-
-    
---------------------------------------------------------------------------------------------------------------
-Introduction:
-Splunk Enterprise is a powerful platform for analyzing and visualizing machine-generated data. It offers real-time insights into your data, enabling you to make informed decisions. In this step-by-step guide, I will walk you through the process of installing Splunk Enterprise on Ubuntu, one of the most popular Linux distributions.
-Let’s dive in!
-Step 1: Prerequisites
-Before we begin, ensure that your Ubuntu system meets the following requirements:
-- A supported version of Ubuntu (e.g., Ubuntu 20.04 LTS).
-- Sufficient disk space and system resources.
-- Access to the internet for downloading the Splunk Enterprise package.
-Step 2: Download Splunk Enterprise (SE)
-1. Open a web browser and navigate to the Splunk website (https://www.splunk.com).
-2. Create an account or login to your account.
-3. Under Products, click on “Free Trials & Downloads”.
-4. Scroll down, under Splunk Enterprise click-on “Get My Free Trial”
-5. Select the appropriate version of Splunk Enterprise for ux (64-bit) and choose the Debian package (`.deb`) format.
-```
-sudo apt install ./splunk<version>.deb
-sudo /opt/splunk/bin/splunk start — accept-license
-sudo /opt/splunk/bin/splunk start
-```
---------------------------------------------------------------------------------------------------------------
 
 **Step 2: Spinning up EC2 instance and installing all the packages (Java)**
 Sign in to AWS Console:
